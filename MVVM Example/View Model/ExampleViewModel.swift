@@ -12,6 +12,8 @@ class ExampleViewModel : ObservableObject {
     
     @Published var todos = [TODO]()
     
+    var nulo : String!
+    
     func getTodos() {
         
         // JSON Placeholder TODO Api
@@ -45,7 +47,7 @@ class ExampleViewModel : ObservableObject {
                 
             } catch {
                 
-                print("Error while decoding ")
+                print("Error while decoding")
                 
             }
             
